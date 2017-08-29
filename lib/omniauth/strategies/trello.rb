@@ -18,13 +18,13 @@ module OmniAuth
         {
           :name => raw_info['fullName'],
           :email => raw_info['email'],
+          :verified => raw_info['confirmed'],
           :nickname => raw_info['username'],
           :urls => {
             :profile => raw_info['url']
           }
         }
       end
-
 
       extra do
         {
